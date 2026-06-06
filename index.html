@@ -248,13 +248,28 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, var(--dark) 0%, var(--primary) 100%);
+            background: linear-gradient(135deg, rgba(26,26,46,0.9) 0%, rgba(0,67,156,0.85) 100%),
+                        url('https://images.pexels.com/photos/2021660/pexels-photo-2021660.jpeg?auto=compress&cs=tinysrgb&w=1920');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 100px 5% 50px;
             position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 50%, transparent 0%, rgba(0,0,0,0.3) 100%);
+            pointer-events: none;
         }
 
         .hero-content {
@@ -315,7 +330,18 @@
         /* Features Section */
         .features {
             padding: 100px 5%;
-            background: var(--light);
+            background: linear-gradient(180deg, var(--light) 0%, #e8f4f8 100%);
+            position: relative;
+        }
+
+        .features::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent), var(--primary));
         }
 
         .section-title {
@@ -360,6 +386,10 @@
             font-size: 3rem;
             color: var(--primary);
             margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .feature-card h3 {
@@ -371,6 +401,17 @@
         .pricing {
             padding: 100px 5%;
             background: white;
+            position: relative;
+        }
+
+        .pricing::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent), var(--primary), var(--accent));
         }
 
         .pricing-grid {
@@ -456,7 +497,18 @@
         /* Packages Section */
         .packages {
             padding: 100px 5%;
-            background: var(--light);
+            background: linear-gradient(180deg, #f8f9fa 0%, var(--light) 100%);
+            position: relative;
+        }
+
+        .packages::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent), var(--primary));
         }
 
         .packages-grid {
@@ -509,13 +561,21 @@
         .game-card {
             background: var(--light);
             border-radius: 15px;
-            padding: 1.5rem;
-            text-align: center;
-            transition: transform 0.3s;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .game-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        .game-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
         }
 
         .game-icon {
@@ -524,14 +584,40 @@
             margin-bottom: 1rem;
         }
 
+        .game-card h4 {
+            padding: 1rem;
+            margin: 0;
+            color: var(--dark);
+            font-size: 1rem;
+            text-align: center;
+        }
+
         /* Testimonials */
         .testimonials {
             padding: 100px 5%;
-            background: var(--dark);
+            background: linear-gradient(135deg, var(--dark) 0%, #2d1b69 100%),
+                        url('https://images.pexels.com/photos/2021660/pexels-photo-2021660.jpeg?auto=compress&cs=tinysrgb&w=1920');
+            background-size: cover;
+            background-attachment: fixed;
+            background-blend-mode: overlay;
             color: white;
+            position: relative;
+        }
+
+        .testimonials::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(26,26,46,0.85);
+            pointer-events: none;
         }
 
         .testimonials-grid {
+            position: relative;
+            z-index: 1;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
@@ -788,7 +874,7 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content animate-fade">
-            <h1>Rental PS4 Terbaik di Kupang, NTT</h1>
+            <h1>🎮 Rental PS4 Terbaik di Kupang, NTT</h1>
             <p>Main game favoritmu tanpa harus beli console! Free delivery, 50+ game lengkap, PS Plus subscription. Booking online, kami antar sampai depan rumah!</p>
             <div class="hero-buttons">
                 <a href="#contact" class="hero-btn btn-primary">
@@ -804,7 +890,7 @@
     <!-- Features Section -->
     <section class="features" id="features">
         <div class="section-title">
-            <h2>Kenapa Pilih PS Room Kupang?</h2>
+            <h2>🎯 Kenapa Pilih PS Room Kupang?</h2>
             <p>Kami menyediakan layanan rental PS4 terbaik dengan harga terjangkau</p>
         </div>
         <div class="features-grid">
@@ -942,48 +1028,48 @@
     <!-- Games Section -->
     <section class="games" id="games">
         <div class="section-title">
-            <h2>Game Tersedia</h2>
+            <h2>🎮 Game Tersedia</h2>
             <p>50+ game favorit siap kamu mainkan!</p>
         </div>
         <div class="games-grid">
             <div class="game-card">
-                <i class="fas fa-futbol game-icon"></i>
+                <img src="https://images.unsplash.com/photo-1593305841991-05c29736760b?w=400&h=300&fit=crop" alt="FIFA 26" class="game-image">
                 <h4>FIFA 26</h4>
             </div>
             <div class="game-card">
-                <i class="fas fa-car game-icon"></i>
+                <img src="https://images.unsplash.com/photo-1628151016024-5d5199d06c9b?w=400&h=300&fit=crop" alt="Gran Turismo 7" class="game-image">
                 <h4>Gran Turismo 7</h4>
             </div>
             <div class="game-card">
-                <i class="fas fa-mask game-icon"></i>
+                <img src="https://images.unsplash.com/photo-1635805737707-575885ab0820?w=400&h=300&fit=crop" alt="Spider-Man" class="game-image">
                 <h4>Spider-Man</h4>
             </div>
             <div class="game-card">
-                <i class="fas fa-gamepad game-icon"></i>
+                <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=400&h=300&fit=crop" alt="GTA V" class="game-image">
                 <h4>GTA V</h4>
             </div>
             <div class="game-card">
-                <i class="fas fa-skull game-icon"></i>
+                <img src="https://images.unsplash.com/photo-1592150621744-aca64f27e99a?w=400&h=300&fit=crop" alt="God of War" class="game-image">
                 <h4>God of War</h4>
             </div>
             <div class="game-card">
-                <i class="fas fa-ghost game-icon"></i>
+                <img src="https://images.unsplash.com/photo-1534423861386-85a16f5d13fd?w=400&h=300&fit=crop" alt="The Last of Us" class="game-image">
                 <h4>The Last of Us</h4>
             </div>
             <div class="game-card">
-                <i class="fas fa-khanda game-icon"></i>
+                <img src="https://images.unsplash.com/photo-1560253023-3ec5d502959f?w=400&h=300&fit=crop" alt="Tekken 7" class="game-image">
                 <h4>Tekken 7</h4>
             </div>
             <div class="game-card">
-                <i class="fas fa-utensils game-icon"></i>
+                <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdc?w=400&h=300&fit=crop" alt="Overcooked 2" class="game-image">
                 <h4>Overcooked 2</h4>
             </div>
             <div class="game-card">
-                <i class="fas fa-users game-icon"></i>
+                <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&h=300&fit=crop" alt="It Takes Two" class="game-image">
                 <h4>It Takes Two</h4>
             </div>
             <div class="game-card">
-                <i class="fas fa-gamepad game-icon"></i>
+                <img src="https://images.unsplash.com/photo-1587573089734-09cb69c0f2b4?w=400&h=300&fit=crop" alt="Minecraft" class="game-image">
                 <h4>Minecraft</h4>
             </div>
         </div>
