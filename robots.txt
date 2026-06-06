@@ -1,0 +1,46 @@
+# Robots.txt for PS Room Kupang
+# https://reymooy27.github.io/psroom-kupang/
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://reymooy27.github.io/psroom-kupang/sitemap.xml
+
+# Crawl-delay (optional, polite crawling)
+Crawl-delay: 1
+
+# Allow Google bots
+User-agent: Googlebot
+Allow: /
+
+# Allow Bing bots
+User-agent: Bingbot
+Allow: /
+
+# Allow DuckDuckGo bots
+User-agent: DuckDuckBot
+Allow: /
+
+# Block bad bots (optional)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Block image scrapers (optional)
+User-agent: *
+Disallow: /*.jpg$
+Disallow: /*.png$
+Disallow: /*.gif$
+
+# Allow main page images
+Allow: /logo-ps-room-kupang.jpg
+
+# Rate limiting
+Crawl-delay: 10
