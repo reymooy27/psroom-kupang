@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS Room Kupang - Rental PS4 Terbaik di Kupang, NTT</title>
+    <meta name="description" content="Sewa PS4 di Kupang dengan harga terjangkau. Free delivery, 50+ game lengkap, PS Plus subscription. Booking online sekarang!">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #00439c;
+            --secondary: #0070d1;
+            --accent: #00b08f;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --text: #333;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: rgba(0, 67, 156, 0.95);
+            padding: 1rem 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .cta-btn {
+            background: var(--accent);
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 176, 143, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--dark) 0%, var(--primary) 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 5% 50px;
+            position: relative;
+        }
+
+        .hero-content {
+            text-align: center;
+            color: white;
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .hero-btn {
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 176, 143, 0.4);
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 100px 5%;
+            background: var(--light);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .section-title p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 100px 5%;
+            background: white;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .pricing-card {
+            background: var(--light);
+            border-radius: 20px;
+            padding: 2.5rem;
+            text-align: center;
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        .pricing-card:hover {
+            transform: scale(1.05);
+        }
+
+        .pricing-card.featured {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+        }
+
+        .pricing-card.featured h3,
+        .pricing-card.featured .price,
+        .pricing-card.featured ul li {
+            color: white;
+        }
+
+        .badge {
+            background: var(--accent);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .pricing-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 2rem;
+        }
+
+        .price span {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .pricing-features li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+
+        .pricing-card.featured .pricing-features li {
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+
+        /* Packages Section */
+        .packages {
+            padding: 100px 5%;
+            background: var(--light);
+        }
+
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .package-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .package-card h3 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .package-price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+        }
+
+        .package-price span {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        /* Games Section */
+        .games {
+            padding: 100px 5%;
+            background: white;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .game-card {
+            background: var(--light);
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .game-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 100px 5%;
+            background: var(--dark);
+            color: white;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 15px;
+        }
+
+        .testimonial-card .stars {
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-card h4 {
+            color: var(--accent);
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 100px 5%;
+            background: var(--light);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--primary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            color: #666;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 100px 5%;
+            background: white;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-info h3 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-item i {
+            color: var(--accent);
+            font-size: 1.5rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            font-family: inherit;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 1rem;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: var(--secondary);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--dark);
+            color: white;
+            padding: 50px 5% 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto 3rem;
+        }
+
+        .footer-section h4 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .social-links a:hover {
+            background: var(--accent);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .pricing-features li {
+                padding: 0.3rem 0;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-fade {
+            animation: fadeIn 0.6s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">PS <span>Room</span> Kupang</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Fitur</a></li>
+                <li><a href="#pricing">Harga</a></li>
+                <li><a href="#packages">Paket</a></li>
+                <li><a href="#games">Game</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+            <a href="#contact" class="cta-btn">Booking Sekarang</a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content animate-fade">
+            <h1>Rental PS4 Terbaik di Kupang, NTT</h1>
+            <p>Main game favoritmu tanpa harus beli console! Free delivery, 50+ game lengkap, PS Plus subscription. Booking online, kami antar sampai depan rumah!</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="hero-btn btn-primary">
+                    <i class="fas fa-gamepad"></i> Booking Sekarang
+                </a>
+                <a href="#packages" class="hero-btn btn-secondary">
+                    <i class="fas fa-list"></i> Lihat Paket
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-title">
+            <h2>Kenapa Pilih PS Room Kupang?</h2>
+            <p>Kami menyediakan layanan rental PS4 terbaik dengan harga terjangkau</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-truck feature-icon"></i>
+                <h3>Free Delivery</h3>
+                <p>Kami antar PS4 sampai depan rumah kamu di area Kupang Kota dan sekitarnya!</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-gamepad feature-icon"></i>
+                <h3>50+ Game Lengkap</h3>
+                <p>FIFA, GTA V, Spider-Man, dan 50+ game lainnya siap kamu mainkan!</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shield-alt feature-icon"></i>
+                <h3>Clean & Tested</h3>
+                <p>Setiap PS4 dicek dan dibersihkan sebelum disewakan. Aman & nyaman!</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-users feature-icon"></i>
+                <h3>4 Controller</h3>
+                <p>Bisa main bareng 4 teman sekaligus! Perfect untuk party gaming!</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-calendar-check feature-icon"></i>
+                <h3>Fleksibel</h3>
+                <p>Sewa harian, weekend, atau bulanan. Sesuaikan dengan kebutuhanmu!</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-headset feature-icon"></i>
+                <h3>Support 24/7</h3>
+                <p>Ada pertanyaan atau masalah? Tim kami siap bantu kapan saja!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="section-title">
+            <h2>Pilihan Paket Sewa</h2>
+            <p>Pilih paket yang paling cocok untuk kebutuhan gaming kamu</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Harian</h3>
+                <div class="price">Rp 50K<span>/hari</span></div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> 24 jam sewa</li>
+                    <li><i class="fas fa-check"></i> 1 PS4 + 2 controller</li>
+                    <li><i class="fas fa-check"></i> 5 game pilihan</li>
+                    <li><i class="fas fa-check"></i> Free delivery*</li>
+                    <li><i class="fas fa-check"></i> Deposit Rp 100K</li>
+                </ul>
+                <a href="#contact" class="cta-btn">Pilih Paket</a>
+            </div>
+            <div class="pricing-card featured">
+                <div class="badge">POPULAR</div>
+                <h3>Weekend</h3>
+                <div class="price">Rp 120K<span>/3 hari</span></div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Jumat - Minggu</li>
+                    <li><i class="fas fa-check"></i> 1 PS4 + 2 controller</li>
+                    <li><i class="fas fa-check"></i> 10 game pilihan</li>
+                    <li><i class="fas fa-check"></i> Free delivery*</li>
+                    <li><i class="fas fa-check"></i> Deposit Rp 100K</li>
+                    <li><i class="fas fa-check"></i> Priority booking</li>
+                </ul>
+                <a href="#contact" class="cta-btn">Pilih Paket</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Mingguan</h3>
+                <div class="price">Rp 250K<span>/7 hari</span></div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> 7 hari sewa</li>
+                    <li><i class="fas fa-check"></i> 1 PS4 + 2 controller</li>
+                    <li><i class="fas fa-check"></i> Semua game tersedia</li>
+                    <li><i class="fas fa-check"></i> Free delivery*</li>
+                    <li><i class="fas fa-check"></i> Deposit Rp 100K</li>
+                    <li><i class="fas fa-check"></i> Diskon 30%</li>
+                </ul>
+                <a href="#contact" class="cta-btn">Pilih Paket</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="packages" id="packages">
+        <div class="section-title">
+            <h2>Paket Subscription Bulanan</h2>
+            <p>Langganan bulanan dengan harga spesial! Gak perlu bayar per sewa</p>
+        </div>
+        <div class="packages-grid">
+            <div class="package-card">
+                <h3>Silver</h3>
+                <div class="package-price">Rp 300K<span>/bulan</span></div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> 4x sewa per bulan</li>
+                    <li><i class="fas fa-check"></i> Hanya weekend</li>
+                    <li><i class="fas fa-check"></i> 2 game pilihan</li>
+                    <li><i class="fas fa-check"></i> Free delivery 1x</li>
+                    <li><i class="fas fa-check"></i> Diskon 10%</li>
+                </ul>
+                <a href="#contact" class="cta-btn">Subscribe Sekarang</a>
+            </div>
+            <div class="package-card">
+                <h3>Gold</h3>
+                <div class="package-price">Rp 500K<span>/bulan</span></div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> 8x sewa per bulan</li>
+                    <li><i class="fas fa-check"></i> Unlimited weekend</li>
+                    <li><i class="fas fa-check"></i> 4 game pilihan</li>
+                    <li><i class="fas fa-check"></i> Free delivery unlimited</li>
+                    <li><i class="fas fa-check"></i> Priority booking</li>
+                    <li><i class="fas fa-check"></i> Diskon 15%</li>
+                </ul>
+                <a href="#contact" class="cta-btn">Subscribe Sekarang</a>
+            </div>
+            <div class="package-card">
+                <h3>Platinum</h3>
+                <div class="package-price">Rp 750K<span>/bulan</span></div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Unlimited sewa</li>
+                    <li><i class="fas fa-check"></i> Setiap hari</li>
+                    <li><i class="fas fa-check"></i> 6 game pilihan</li>
+                    <li><i class="fas fa-check"></i> Free delivery unlimited</li>
+                    <li><i class="fas fa-check"></i> Birthday gift (1x free)</li>
+                    <li><i class="fas fa-check"></i> New game priority</li>
+                    <li><i class="fas fa-check"></i> Diskon 20%</li>
+                </ul>
+                <a href="#contact" class="cta-btn">Subscribe Sekarang</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section class="games" id="games">
+        <div class="section-title">
+            <h2>Game Tersedia</h2>
+            <p>50+ game favorit siap kamu mainkan!</p>
+        </div>
+        <div class="games-grid">
+            <div class="game-card">
+                <i class="fas fa-futbol game-icon"></i>
+                <h4>FIFA 26</h4>
+            </div>
+            <div class="game-card">
+                <i class="fas fa-car game-icon"></i>
+                <h4>Gran Turismo 7</h4>
+            </div>
+            <div class="game-card">
+                <i class="fas fa-mask game-icon"></i>
+                <h4>Spider-Man</h4>
+            </div>
+            <div class="game-card">
+                <i class="fas fa-gamepad game-icon"></i>
+                <h4>GTA V</h4>
+            </div>
+            <div class="game-card">
+                <i class="fas fa-skull game-icon"></i>
+                <h4>God of War</h4>
+            </div>
+            <div class="game-card">
+                <i class="fas fa-ghost game-icon"></i>
+                <h4>The Last of Us</h4>
+            </div>
+            <div class="game-card">
+                <i class="fas fa-khanda game-icon"></i>
+                <h4>Tekken 7</h4>
+            </div>
+            <div class="game-card">
+                <i class="fas fa-utensils game-icon"></i>
+                <h4>Overcooked 2</h4>
+            </div>
+            <div class="game-card">
+                <i class="fas fa-users game-icon"></i>
+                <h4>It Takes Two</h4>
+            </div>
+            <div class="game-card">
+                <i class="fas fa-gamepad game-icon"></i>
+                <h4>Minecraft</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="section-title">
+            <h2>Apa Kata Mereka?</h2>
+            <p style="color: rgba(255,255,255,0.8);">Testimoni dari customer setia PS Room Kupang</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Gaming seru banget! PS4-nya bersih, stik responsif, delivery juga cepat. Recommended!"</p>
+                <h4>— Andi, 24, Oesapa</h4>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Harga terjangkau, game lengkap. Paket weekend worth it banget buat main bareng teman!"</p>
+                <h4>— Rizky, 20, Kelapa Lima</h4>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Pelayanan ramah, proses cepat. Besoknya udah dianter. Bakal sewa lagi!"</p>
+                <h4>— Sarah, 22, Alak</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="section-title">
+            <h2>FAQ - Pertanyaan Sering Ditanya</h2>
+            <p>Jawaban untuk pertanyaan yang sering kami terima</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    Berapa deposit yang diperlukan?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Deposit Rp 100.000. Deposit akan dikembalikan penuh saat pengembalian console dalam kondisi baik.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    Area delivery coverage dimana saja?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Free delivery untuk area: Kupang Kota, Oesapa, Kelapa Lima, Alak, Maulafa, Penfui, Naikolan, Bakunase. Beyond area bisa nego!
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    Berapa lama waktu delivery?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Delivery time 30-60 menit setelah booking dikonfirmasi, tergantung lokasi.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    Apa saja yang harus disiapkan saat return?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Console dalam kondisi baik, semua kabel, controller, dan game disc lengkap. Kami akan cek bersama saat pickup.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    Bagaimana jika ada masalah dengan console?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Laporkan segera ke kami! Kami akan cek dan jika memang ada kerusakan non-user error, akan kami ganti atau perbaiki.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    Apakah bisa sewa untuk acara/wedding?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Bisa! Kami punya paket party khusus untuk acara, wedding, gathering. Hubungi kami untuk paket dan harga spesial.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-title">
+            <h2>Booking Sekarang!</h2>
+            <p>Hubungi kami atau isi form di bawah ini</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Hubungi Kami</h3>
+                <div class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <strong>WhatsApp:</strong><br>
+                        <a href="https://wa.me/628xxxxxx" style="color: var(--primary);">08xx-xxxx-xxxx</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-instagram"></i>
+                    <div>
+                        <strong>Instagram:</strong><br>
+                        <a href="https://instagram.com/psroomkupang" style="color: var(--primary);">@psroomkupang</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>Area Delivery:</strong><br>
+                        Kupang Kota, NTT
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="far fa-clock"></i>
+                    <div>
+                        <strong>Jam Operasional:</strong><br>
+                        Setiap hari: 08:00 - 23:00 WITA
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Form Booking</h3>
+                <form id="bookingForm">
+                    <input type="text" placeholder="Nama Lengkap" required>
+                    <input type="tel" placeholder="Nomor WhatsApp" required>
+                    <input type="email" placeholder="Email (opsional)">
+                    <select required>
+                        <option value="">Pilih Paket</option>
+                        <option value="harian">Harian (Rp 50K)</option>
+                        <option value="weekend">Weekend (Rp 120K)</option>
+                        <option value="mingguan">Mingguan (Rp 250K)</option>
+                        <option value="silver">Silver Subscription (Rp 300K/bulan)</option>
+                        <option value="gold">Gold Subscription (Rp 500K/bulan)</option>
+                        <option value="platinum">Platinum Subscription (Rp 750K/bulan)</option>
+                        <option value="party">Party Package</option>
+                    </select>
+                    <input type="date" placeholder="Tanggal Sewa" required>
+                    <textarea rows="4" placeholder="Alamat Delivery & Catatan Tambahan"></textarea>
+                    <button type="submit">Kirim Booking</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>PS Room Kupang</h4>
+                <p>Rental PS4 terbaik di Kupang, NTT dengan harga terjangkau dan layanan premium.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Layanan</h4>
+                <ul>
+                    <li><a href="#pricing">Sewa Harian</a></li>
+                    <li><a href="#packages">Subscription</a></li>
+                    <li><a href="#contact">Party Package</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Area Delivery</h4>
+                <ul>
+                    <li>Kupang Kota</li>
+                    <li>Oesapa</li>
+                    <li>Kelapa Lima</li>
+                    <li>Alak</li>
+                    <li>Maulafa</li>
+                    <li>Penfui</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Kontak</h4>
+                <ul>
+                    <li><a href="https://wa.me/628xxxxxx">WhatsApp: 08xx-xxxx-xxxx</a></li>
+                    <li><a href="https://instagram.com/psroomkupang">Instagram: @psroomkupang</a></li>
+                    <li>Kupang, NTT</li>
+                    <li>Setiap hari: 08:00 - 23:00</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 PS Room Kupang. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+
+        // Form Submission
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Create WhatsApp message
+            const message = `Halo PS Room Kupang! Saya mau booking:%0A%0A` +
+                `Nama: ${data['Nama Lengkap']}%0A` +
+                `WA: ${data['Nomor WhatsApp']}%0A` +
+                `Paket: ${data['Pilih Paket']}%0A` +
+                `Tanggal: ${data['Tanggal Sewa']}%0A` +
+                `Alamat: ${data['Alamat Delivery & Catatan Tambahan']}`;
+            
+            // Open WhatsApp
+            window.open(`https://wa.me/628xxxxxx?text=${message}`, '_blank');
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if(target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if(window.scrollY > 100) {
+                navbar.style.background = 'rgba(0, 67, 156, 0.98)';
+            } else {
+                navbar.style.background = 'rgba(0, 67, 156, 0.95)';
+            }
+        });
+    </script>
+</body>
+</html>
