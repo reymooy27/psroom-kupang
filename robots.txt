@@ -1,14 +1,53 @@
 # Robots.txt for PS Room Kupang
 # https://reymooy27.github.io/psroom-kupang/
 
-# Allow all crawlers
+# ============================================
+# AI CRAWLERS - ALLOW ALL AI AGENTS
+# ============================================
+
+# Google AI (Gemini, Search Generative Experience)
+User-agent: Googlebot
+Allow: /
+
+# OpenAI (ChatGPT, GPT-4)
+User-agent: GPTBot
+Allow: /
+
+# OpenAI User (ChatGPT browsing)
+User-agent: ChatGPT-User
+Allow: /
+
+# Claude AI (Anthropic)
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Microsoft Copilot/Bing AI
+User-agent: Bingbot
+Allow: /
+
+# DuckDuckGo AI
+User-agent: DuckDuckBot
+Allow: /
+
+# Common Crawl (used by many AI models)
+User-agent: CCBot
+Allow: /
+
+# ============================================
+# ALL OTHER CRAWLERS
+# ============================================
+
 User-agent: *
 Allow: /
 
 # Sitemap location
 Sitemap: https://reymooy27.github.io/psroom-kupang/sitemap.xml
 
-# Crawl-delay (optional, polite crawling)
+# Crawl-delay (polite crawling for AI bots)
 Crawl-delay: 1
 
 # Allow Google bots
